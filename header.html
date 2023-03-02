@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Stacks Dump</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#5546FF" />
+<meta name="description" content="A public view of statistics around the Stacks blockchain, published hourly using stacks-dump." />
+
+
+<style>
+body {
+  background-color: black;
+  color: black;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  background-color: #5546FF;
+  color: #EEE;
+  width: 100%;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #EEE;
+  text-decoration: underline;
+}
+.stacks-dump-header {
+  background-color: black;
+  color: #EEE;
+  width: 100%;
+  padding: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.stacks-dump-blocks {
+  background-color: black;
+  color: #EEE;
+  width: 100%;
+  padding: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.stacks-dump-summary {
+  background-color: black;
+  color: #EEE;
+  width: 100%;
+  padding: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.highlight {
+			background-color: yellow;
+		}
+
+.red {
+			color: red;
+		}
+		.green {
+			color: green;
+		}
+
+    .yellow {
+			color: yellow;
+		}
+
+</style>
+
+
+
+<script type="text/javascript">
+	window.onload = function() {
+		var preElements = document.querySelectorAll("pre.stacks-dump-summary");
+		for (var p = 0; p < preElements.length; p++) {
+			var preElement = preElements[p];
+			var text = preElement.textContent;
+			var lines = text.split("\n");
+			var outputText = "";
+			for (var i = 0; i < lines.length; i++) {
+				var line = lines[i];
+				// Check if the line contains an address from the list
+				var addresses = ["SP2CKVQXCKD8T0T5MXEC3MM9F23CXA14TX5MVACG6", "SPBCRYHXXJ9JTJGM2F0MTKFTEM65TA6WG3AE1F5J", "SP1SJ5DHQ0AWMTD8V20WPN03AHH6F1VXDTMPM1AVM", "SP2X33H8HACBWSF6HHBEWKGMZC7KPWEP2GNK28XVV", "SPD65ED3V9WSTNPNVM928734G4MYXBM0JR10VKJN","SP2DA2AF7VYR6XCDRG7V8P97YJZPH4521TVS9VE5Q","SPZ5JM4K0JAXQ7P5BHSXHCKSZ6BG6VDKTCN24V9S"];
+				var containsAddress = false;
+				for (var k = 0; k < addresses.length; k++) {
+					if (line.includes(addresses[k])) {
+						containsAddress = true;
+						break;
+					}
+				}
+				if (containsAddress) {
+					outputText += "<span class='yellow'>" + line + "</span>";
+				} else {
+					outputText += line;
+				}
+				outputText += "\n";
+			}
+			preElement.innerHTML = outputText;
+		}
+
+		// Highlight other sections as before
+		var preElements = document.querySelectorAll("pre.stacks-dump-blocks");
+		for (var p = 0; p < preElements.length; p++) {
+			var preElement = preElements[p];
+			var text = preElement.textContent;
+			var lines = text.split("\n");
+			var outputText = "";
+			for (var i = 0; i < lines.length; i++) {
+				var line = lines[i];
+				if (!line.includes(">")) {
+					outputText += "<span class='red'>" + line + "</span>";
+				} else {
+					var asteriskIndex = line.indexOf("*");
+					if (asteriskIndex >= 0) {
+						var words = line.split(" ");
+						var greenWords = "";
+						for (var j = 0; j < words.length; j++) {
+							if (words[j].includes("*")) {
+								break;
+							}
+							greenWords += words[j] + " ";
+						}
+						outputText += "<span>" + greenWords + "</span>";
+						outputText += "<span class='green'>" + line.substring(greenWords.length, asteriskIndex) + "</span>";
+						outputText += "<span>" + line.substring(asteriskIndex) + "</span>";
+					} else {
+						outputText += "<span>" + line + "</span>";
+					}
+				}
+				outputText += "\n";
+			}
+			preElement.innerHTML = outputText;
+		}
+	}
+</script>
+
+
+
+
+</head>
+<body>
+#<div class="header">
+#  <h1>Stacks Dump</h1>
+#  <p>A public view of statistics around the Stacks blockchain, published about every 10 minutes using stacks-dump.</p>
+#  <p>Taken at: 20230302-134545</p>
+#</div>
+
+<pre class="stacks-dump-header">
+</pre>
+
+<pre class="stacks-dump-blocks">
