@@ -9,8 +9,6 @@ missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
 missing consensus hash db610c895d8696e013b6349a6fa343808f3963fc
 missing consensus hash 6ce394ce0aa26b9f32d7227e9b94f545afd8a0ad
 missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
-780061 1 780060 97951> 1,000.00 16,322 2,561,218 br7293 s:6fffcd48ff p:02a52dc241 c:e7ae530792 i:81b65dc333 b:000000000000000000006fb8e     [7.5]SP18XQ1ZCQ [15.1]SP1SJ5DHQ0*[16.0]SP2CKVQXCK [12.8]SP2DA2AF7V [3.8]SP34NSEPC8 [18.9]SPBCRYHXXJ [15.1]SPD65ED3V9 [10.8]SPZ5JM4K0J 
-780062 2 780060 97951  1,000.00 12,424 2,387,248 br7294 s:34edbf1f9f p:02a52dc241 c:4748575b6c i:629a23379d b:000000000000000000028c477     [0.8]SP10BY4VGY [16.2]SP1SJ5DHQ0 [17.2]SP2CKVQXCK [13.7]SP2DA2AF7V [4.0]SP34NSEPC8*[20.3]SPBCRYHXXJ [16.2]SPD65ED3V9 [11.5]SPZ5JM4K0J 
 780063 2 780061 97952> 1,000.00 7,570, 2,367,918 br7293 s:6897df24d3 p:6fffcd48ff c:a4ea1f9dff i:6310a15549 b:00000000000000000001957ef     [16.3]SP1SJ5DHQ0 [17.3]SP2CKVQXCK [13.8]SP2DA2AF7V*[4.1]SP34NSEPC8 [20.4]SPBCRYHXXJ [16.3]SPD65ED3V9 [11.6]SPZ5JM4K0J 
 780064 1 780063 97953> 1,000.00 4,995, 2,580,548 br7293 s:7d6200b62b p:6897df24d3 c:2618e189fc i:3230175328 b:00000000000000000003ea0aa @@  [0.7]SP10BY4VGY [7.5]SP18XQ1ZCQ [15.0]SP1SJ5DHQ0 [15.9]SP2CKVQXCK [12.7]SP2DA2AF7V [3.7]SP34NSEPC8 [18.8]SPBCRYHXXJ*[15.0]SPD65ED3V9 [10.7]SPZ5JM4K0J 
 780065 1 780064 97954> 1,000.00 19,808 2,561,218 br7293 s:bea8ea7226 p:7d6200b62b c:76a6469519 i:39f0f43601 b:0000000000000000000556693 @@  [7.5]SP18XQ1ZCQ [15.1]SP1SJ5DHQ0 [16.0]SP2CKVQXCK*[12.8]SP2DA2AF7V [3.8]SP34NSEPC8 [18.9]SPBCRYHXXJ [15.1]SPD65ED3V9 [10.8]SPZ5JM4K0J 
@@ -1511,3 +1509,6 @@ missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
 781560 ?    -            -       -        -                -            -            -            -       b:00000000000000000005bc835     
 781561 ?    -            -       -        -                -            -            -            -       b:0000000000000000000552586     
 781562 ?    -            -       -        -                -            -            -            -       b:000000000000000000020b958     
+781563 ?    -            -       -        -                -            -            -            -       b:00000000000000000005d9a1e     
+781564 ?    -            -       -        -                -            -            -            -       b:000000000000000000065587b     
+781565 ?    -            -       -        -                -            -            -            -       b:00000000000000000002b8c04     
