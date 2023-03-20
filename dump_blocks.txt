@@ -9,9 +9,7 @@ missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
 missing consensus hash db610c895d8696e013b6349a6fa343808f3963fc
 missing consensus hash 6ce394ce0aa26b9f32d7227e9b94f545afd8a0ad
 missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
-780130 ?    -            -       -        -                -            -            -            -       b:00000000000000000005b7ed1     
-780131 2 780129 98009> 2,000.00 0      854,384 br7299 s:284d49dc3b p:614972d898 c:712545cd9d i:75f8355556 b:000000000000000000048ce52     [2.3]SP10BY4VGY [48.1]SP2CKVQXCK*[38.3]SP2DA2AF7V [11.3]SP34NSEPC8 
-780132 1 780131 98010> 1,000.00 7,869, 2,077,002 br7299 s:5d0589de3f p:284d49dc3b c:625b881fe8 i:6afabec972 b:000000000000000000038f3ab @+  [9.3]SP18XQ1ZCQ [18.6]SP1SJ5DHQ0 [19.8]SP2CKVQXCK*[15.8]SP2DA2AF7V [4.7]SP34NSEPC8 [18.6]SPD65ED3V9 [13.3]SPZ5JM4K0J 
+780132 1 780131 98010> 1,000.00 7,869, 2,077,002 br7299 s:5d0589de3f p:284d49dc3b c:625b881fe8 i:6afabec972 b:000000000000000000038f3ab     [9.3]SP18XQ1ZCQ [18.6]SP1SJ5DHQ0 [19.8]SP2CKVQXCK*[15.8]SP2DA2AF7V [4.7]SP34NSEPC8 [18.6]SPD65ED3V9 [13.3]SPZ5JM4K0J 
 780133 1 780132 98011> 1,000.00 36,497 1,221,652 br7299 s:449e53bd83 p:5d0589de3f c:7b22c54d6c i:e69c1a57f3 b:00000000000000000003c0ff6 @@  [33.6]SP2CKVQXCK [26.8]SP2DA2AF7V*[7.9]SP34NSEPC8 [31.6]SPD65ED3V9 
 780134 1 780133 98012> 1,000.00 9,895, 2,561,218 br7299 s:0f75da5c1e p:449e53bd83 c:ab1fff603f i:7272263def b:00000000000000000003d6cb9 @@  [7.5]SP18XQ1ZCQ [15.1]SP1SJ5DHQ0 [16.0]SP2CKVQXCK [12.8]SP2DA2AF7V [3.8]SP34NSEPC8 [18.9]SPBCRYHXXJ [15.1]SPD65ED3V9*[10.8]SPZ5JM4K0J 
 780135 1 780134 98013> 1,000.00 1,176, 2,053,806 br7299 s:d84887176b p:0f75da5c1e c:290691c4ad i:75b59af090 b:00000000000000000001745a7 @@  [9.4]SP18XQ1ZCQ*[18.8]SP1SJ5DHQ0 [16.0]SP2DA2AF7V [23.6]SPBCRYHXXJ [18.8]SPD65ED3V9 [13.4]SPZ5JM4K0J 
@@ -1510,3 +1508,5 @@ missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
 781628 ?    -            -       -        -                -            -            -            -       b:00000000000000000000f01d4     
 781629 ?    -            -       -        -                -            -            -            -       b:000000000000000000023a261     
 781630 ?    -            -       -        -                -            -            -            -       b:0000000000000000000668c4d     
+781631 ?    -            -       -        -                -            -            -            -       b:000000000000000000028cc21     
+781632 ?    -            -       -        -                -            -            -            -       b:00000000000000000000512b8     
