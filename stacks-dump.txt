@@ -1510,6 +1510,7 @@ missing consensus hash d0c8288d9409dca420cbd1da2900b5568fac257f
 781610 ?    -            -       -        -                -            -            -            -       b:0000000000000000000102928     
 781611 ?    -            -       -        -                -            -            -            -       b:00000000000000000000d6744     
 781612 ?    -            -       -        -                -            -            -            -       b:000000000000000000015affd     
+781613 ?    -            -       -        -                -            -            -            -       b:0000000000000000000105279     
 ┌─┬─────────────────────────────────────────┬──────────────────────────────────┬────────────┬──────┬──────┬───────────┬───────┬──────────┬──────────┬──────────┬─────────┬──────┬─────────┐
 │ │                              STX address│                       BTC address│actual wins/│actual│ won %│       paid│   last│  lifetime│   rewards│   matured│  pending│ theo.│ share of│
 │ │                                         │                                  │ total wins/│ win %│      │   satoshis│   paid│   rewards│          │   rewards│  rewards│ win %│ pending │
@@ -1541,8 +1542,8 @@ miners (overall): 266
 miners (won rewards): 20
 total commit (last block): 0 sats
 block reward (last block): 0.00 STX
-btc blocks: 1501
-empty btc blocks: 204
+btc blocks: 1502
+empty btc blocks: 205
 actual_win_total: 1116
 orphaned blocks: 178
 incorrect blocks: 3
