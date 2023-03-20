@@ -121,33 +121,7 @@ body {
 		}
 
 		
-		//Metastack
-		
-		for (var p1 = 0; p1 < preElements.length; p1++) {
-			var preElement1 = preElements[p1];
-			var text1 = preElement1.textContent;
-			var lines1 = text.split("\n");
-			var outputText1 = "";
-			for (var i1 = 0; i1 < lines1.length; i1++) {
-				var line1 = lines1[i1];
-				// Check if the line contains an address from the list
-				var addresses1 = ["SP2PDX6JQ4NN2Z7J91YJKWAAHBRHWGN5ETZ403FXH" "SPN85R0W5Z87161WKR0KC5PDNBW6TY42BC8FJ07"];
-				var containsAddress1 = false;
-				for (var k1 = 0; k1 < addresses1.length; k1++) {
-					if (line1.includes(addresses1[k1])) {
-						containsAddress1 = true;
-						break;
-					}
-				}
-				if (containsAddress1) {
-					outputText1 += "<span class='orange'>" + line1 + "</span>";
-				} else {
-					outputText1 += line1;
-				}
-				outputText1 += "\n";
-			}
-			preElement.innerHTML = outputText1;
-		}
+	
 
 	
 
@@ -195,7 +169,7 @@ body {
 #<div class="header">
 #  <h1>Stacks Dump</h1>
 #  <p>A public view of statistics around the Stacks blockchain, published about every 10 minutes using stacks-dump.</p>
-#  <p>Taken at: 20230320-174505</p>
+#  <p>Taken at: 20230320-174753</p>
 #</div>
 
 <pre class="stacks-dump-header">
