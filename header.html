@@ -67,12 +67,20 @@ body {
 .red {
 			color: red;
 		}
-		.green {
+.green {
 			color: green;
 		}
 
-    .yellow {
+.yellow {
 			color: yellow;
+		}
+
+.blue {
+			color: blue;
+		}
+
+.pink {
+			color: pink;
 		}
 
 </style>
@@ -80,8 +88,12 @@ body {
 
 
 <script type="text/javascript">
+	
 	window.onload = function() {
 		var preElements = document.querySelectorAll("pre.stacks-dump-summary");
+		
+		//Entity
+
 		for (var p = 0; p < preElements.length; p++) {
 			var preElement = preElements[p];
 			var text = preElement.textContent;
@@ -107,6 +119,64 @@ body {
 			}
 			preElement.innerHTML = outputText;
 		}
+
+		//Foundation
+		
+		for (var p = 0; p < preElements.length; p++) {
+			var preElement = preElements[p];
+			var text = preElement.textContent;
+			var lines = text.split("\n");
+			var outputText = "";
+			for (var i = 0; i < lines.length; i++) {
+				var line = lines[i];
+				// Check if the line contains an address from the list
+				var addresses = ["SP25P61C1DJ3P4TMTRJWQ5HE3ESK3PBTXS1EKYT43"];
+				var containsAddress = false;
+				for (var k = 0; k < addresses.length; k++) {
+					if (line.includes(addresses[k])) {
+						containsAddress = true;
+						break;
+					}
+				}
+				if (containsAddress) {
+					outputText += "<span class='blue'>" + line + "</span>";
+				} else {
+					outputText += line;
+				}
+				outputText += "\n";
+			}
+			preElement.innerHTML = outputText;
+		}
+
+		//Metastack
+		
+		for (var p = 0; p < preElements.length; p++) {
+			var preElement = preElements[p];
+			var text = preElement.textContent;
+			var lines = text.split("\n");
+			var outputText = "";
+			for (var i = 0; i < lines.length; i++) {
+				var line = lines[i];
+				// Check if the line contains an address from the list
+				var addresses = ["SP2PDX6JQ4NN2Z7J91YJKWAAHBRHWGN5ETZ403FXH" "SPN85R0W5Z87161WKR0KC5PDNBW6TY42BC8FJ07"];
+				var containsAddress = false;
+				for (var k = 0; k < addresses.length; k++) {
+					if (line.includes(addresses[k])) {
+						containsAddress = true;
+						break;
+					}
+				}
+				if (containsAddress) {
+					outputText += "<span class='pink'>" + line + "</span>";
+				} else {
+					outputText += line;
+				}
+				outputText += "\n";
+			}
+			preElement.innerHTML = outputText;
+		}
+
+	
 
 		// Highlight other sections as before
 		var preElements = document.querySelectorAll("pre.stacks-dump-blocks");
@@ -152,7 +222,7 @@ body {
 #<div class="header">
 #  <h1>Stacks Dump</h1>
 #  <p>A public view of statistics around the Stacks blockchain, published about every 10 minutes using stacks-dump.</p>
-#  <p>Taken at: 20230320-171345</p>
+#  <p>Taken at: 20230320-172924</p>
 #</div>
 
 <pre class="stacks-dump-header">
