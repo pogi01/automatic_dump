@@ -120,60 +120,33 @@ body {
 			preElement.innerHTML = outputText;
 		}
 
-		//Foundation
 		
-		for (var p = 0; p < preElements.length; p++) {
-			var preElement = preElements[p];
-			var text = preElement.textContent;
-			var lines = text.split("\n");
-			var outputText = "";
-			for (var i = 0; i < lines.length; i++) {
-				var line = lines[i];
-				// Check if the line contains an address from the list
-				var addresses = ["SP25P61C1DJ3P4TMTRJWQ5HE3ESK3PBTXS1EKYT43"];
-				var containsAddress = false;
-				for (var k = 0; k < addresses.length; k++) {
-					if (line.includes(addresses[k])) {
-						containsAddress = true;
-						break;
-					}
-				}
-				if (containsAddress) {
-					outputText += "<span class='blue'>" + line + "</span>";
-				} else {
-					outputText += line;
-				}
-				outputText += "\n";
-			}
-			preElement.innerHTML = outputText;
-		}
-
 		//Metastack
 		
-		for (var p = 0; p < preElements.length; p++) {
-			var preElement = preElements[p];
-			var text = preElement.textContent;
-			var lines = text.split("\n");
-			var outputText = "";
-			for (var i = 0; i < lines.length; i++) {
-				var line = lines[i];
+		for (var p1 = 0; p1 < preElements.length; p1++) {
+			var preElement1 = preElements[p1];
+			var text1 = preElement1.textContent;
+			var lines1 = text.split("\n");
+			var outputText1 = "";
+			for (var i1 = 0; i1 < lines1.length; i1++) {
+				var line1 = lines1[i1];
 				// Check if the line contains an address from the list
-				var addresses = ["SP2PDX6JQ4NN2Z7J91YJKWAAHBRHWGN5ETZ403FXH" "SPN85R0W5Z87161WKR0KC5PDNBW6TY42BC8FJ07"];
-				var containsAddress = false;
-				for (var k = 0; k < addresses.length; k++) {
-					if (line.includes(addresses[k])) {
-						containsAddress = true;
+				var addresses1 = ["SP2PDX6JQ4NN2Z7J91YJKWAAHBRHWGN5ETZ403FXH" "SPN85R0W5Z87161WKR0KC5PDNBW6TY42BC8FJ07"];
+				var containsAddress1 = false;
+				for (var k1 = 0; k1 < addresses1.length; k1++) {
+					if (line1.includes(addresses1[k1])) {
+						containsAddress1 = true;
 						break;
 					}
 				}
-				if (containsAddress) {
-					outputText += "<span class='orange'>" + line + "</span>";
+				if (containsAddress1) {
+					outputText1 += "<span class='orange'>" + line1 + "</span>";
 				} else {
-					outputText += line;
+					outputText1 += line1;
 				}
-				outputText += "\n";
+				outputText1 += "\n";
 			}
-			preElement.innerHTML = outputText;
+			preElement.innerHTML = outputText1;
 		}
 
 	
@@ -222,7 +195,7 @@ body {
 #<div class="header">
 #  <h1>Stacks Dump</h1>
 #  <p>A public view of statistics around the Stacks blockchain, published about every 10 minutes using stacks-dump.</p>
-#  <p>Taken at: 20230320-174003</p>
+#  <p>Taken at: 20230320-174505</p>
 #</div>
 
 <pre class="stacks-dump-header">
