@@ -163,6 +163,9 @@ body {
 				
 				//Trustmachines
 				var addresses5 = ["SP34NSEPC85QQAZ35S51FKDNRM803HEDH56VS0XES"];
+
+				//Miner
+				var addresses6 = ["SP11SERAP17NV2F1PGHX6S9RGPE3CSZAE3B6Z9JW7"];
 				
 
 				var containsAddress = false;
@@ -170,6 +173,7 @@ body {
 				var containsAddress3 = false;
 				var containsAddress4 = false;
 				var containsAddress5 = false;
+				var containsAddress6 = false;
 				
 				
 
@@ -208,6 +212,13 @@ body {
 					}
 				}
 
+				for (var k6 = 0; k6 < addresses6.length; k6++) {
+					if (line.includes(addresses6[k6])) {
+						containsAddress6 = true;
+						break;
+					}
+				}
+
 				
 
 
@@ -221,7 +232,10 @@ body {
 					outputText += "<span class='blue'>" + line + "</span>";
 				} else if (containsAddress5){
 					outputText += "<span class='lightgreen'>" + line + "</span>";
+				} else if (containsAddress6){
+					outputText += "<span class='cyan'>" + line + "</span>";
 				}
+
 				
 				
 				else{
@@ -284,7 +298,7 @@ body {
 <p>Follow us on <a href="https://twitter.com/bullishbyte">twitter</a> to stay updated!</p>
 
 <p>A public view of statistics around the Stacks blockchain, published about every 20 minutes using stacks-dump.</p>
-<p>Taken at: 20230321-123535</p>
+<p>Taken at: 20230321-124721</p>
 </div>
 
 <pre class="stacks-dump-header">
